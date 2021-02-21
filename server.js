@@ -2,12 +2,12 @@ const mysql = require("mysql");
 const inquirer = require("inquirer");
 const consoleTable = require("console.table")
 
-// Create connection 
+// Create connection must enter password to access db
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Mack!3!4",
+    password: "",
     database: "employeeTracker_db"
 })
 
